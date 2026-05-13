@@ -30,6 +30,7 @@ options:
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
   OLLAMA_API_KEY: ""
+  HOME: /share
   gpus: all
 schema:
   OLLAMA_CONTEXT_LENGTH: int?
@@ -53,6 +54,7 @@ schema:
   OLLAMA_ORIGINS: str
   HTTPS_PROXY: str?
   OLLAMA_API_KEY: str?
+  HOME: str
   gpus: str
 backup_exclude:
   - "ollama/**"
