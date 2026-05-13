@@ -20,13 +20,13 @@ If you want to change the model, delete the integration (not the addon!) and res
 
 ## Ollama Cloud Models
 
-Ollama supports cloud-hosted models that run on Ollama's infrastructure, useful for large models that don't fit on a local GPU.
+Ollama supports cloud-hosted models that run on Ollama's infrastructure, useful for large models that don't fit on a local GPU. To use cloud models, run the following inside the addon container and follow the sign-in URL:
 
-To use cloud models:
+```bash
+ollama run gpt-oss:120b-cloud
+```
 
-1. Create an API key at [ollama.com/settings/keys](https://ollama.com/settings/keys)
-2. Set the `OLLAMA_API_KEY` option in the addon configuration
-3. Pull a cloud model (e.g. `gpt-oss:120b-cloud`) via the Ollama API
+Cloud credentials are stored in `~/.ollama/` and persisted to `/share/.ollama/` across addon restarts (via the `HOME` option).
 
 Read more at the [Ollama Cloud documentation](https://docs.ollama.com/cloud).
 
