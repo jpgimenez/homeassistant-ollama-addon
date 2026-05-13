@@ -23,3 +23,6 @@ configuration:
   OLLAMA_VULKAN:
     name: OLLAMA_VULKAN
     description: Additional GPU Support. Read [the docs](https://docs.ollama.com/gpu#vulkan-gpu-support) for more information.
+  OLLAMA_API_KEY:
+    name: OLLAMA_API_KEY
+    description: API key for authenticating with Ollama Cloud (ollama.com) to use cloud-hosted models. Create a key at https://ollama.com/settings/keys.

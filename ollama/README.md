@@ -18,6 +18,18 @@ Use the following data:
 
 If you want to change the model, delete the integration (not the addon!) and restart the process for the configuration of the integration.
 
+## Ollama Cloud Models
+
+Ollama supports cloud-hosted models that run on Ollama's infrastructure, useful for large models that don't fit on a local GPU.
+
+To use cloud models:
+
+1. Create an API key at [ollama.com/settings/keys](https://ollama.com/settings/keys)
+2. Set the `OLLAMA_API_KEY` option in the addon configuration
+3. Pull a cloud model (e.g. `gpt-oss:120b-cloud`) via the Ollama API
+
+Read more at the [Ollama Cloud documentation](https://docs.ollama.com/cloud).
+
 ## Note on the UI Link
 
 The UI Link is only there to check if the API of ollama is available. There is no chat functionality included in the official image of ollama.

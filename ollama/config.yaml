@@ -51,6 +51,7 @@ schema:
   OLLAMA_CONTEXT_LENGTH: int?
   OLLAMA_ORIGINS: str
   HTTPS_PROXY: str?
+  OLLAMA_API_KEY: str?
   gpus: str
 backup_exclude:
   - "ollama/**"
